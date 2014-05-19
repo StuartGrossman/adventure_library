@@ -1,0 +1,8 @@
+<h1>Welcome to the adventure page</h1>
+ <p>Back to <a href="/adventures"> Adventures</a></p>
+<div class="inside-box1">
+<h1> All libraries </h1>
+<br>
+<% @libraries.each do |l| %>
+  <br><%= link_to l.url, l.url %><br> 
+<% end %>

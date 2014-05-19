@@ -1,0 +1,31 @@
+
+<h1> Local Advantures </h1>
+<ul>
+
+<% @adventure.each do |x| %>
+<li><%= link_to x.title, adventure_pages_path(x.pages.find_by_name(:start)) %></li>
+	<% end %>
+
+</ul>
+
+<h1> Advantures From other Server </h1>
+
+<ul>
+
+<% @adventure.each do |x| %>
+<li><%= x.library_id %></li>
+<% end %>
+</ul>
+
+
+<h1>Add a library</h1>
+
+  <%= form_for Library.new do |f| %>
+  <%= f.text_field :url, placeholder: 'Enter Url' %>
+
+  <%= f.submit 'Submit' %>
+
+  <% end %>
+
+
+

@@ -37,6 +37,8 @@ group :test, :development do
   gem 'pry'
   gem 'pry-byebug'
   gem 'dotenv-rails'
+  # gem "better_errors"
+  gem "binding_of_caller"
 end
 
 # Use ActiveModel has_secure_password
@@ -44,7 +46,10 @@ end
 
 # Use unicorn as the app server
 gem 'unicorn'
-
+gem 'foreman'
+gem 'typhoeus'
+gem 'unicorn-rails'
+gem 'json'
 gem 'sidekiq'
 
 # Use Capistrano for deployment

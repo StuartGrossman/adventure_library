@@ -1,0 +1,16 @@
+<h1>Welcome to the amazing Adventure page</h1>
+<p>Add a new advnture to the library</p>
+
+<div class="inside-box1">
+<%= form_for @adventure do |f| %>
+  <%= f.label :Title %>
+  <%= f.text_field :title %> <br><br>
+  <%= f.label :Author %>
+  <%= f.text_field :author %> <br><br>
+  <%= f.label :Story %>
+  <%= f.text_area :author %> <br><br>
+  <%= f.submit "Create!" %>
+ <% end %>
+
+</div>
+<p>Back to <a href="/adventures">Shane's Adventures</a></p>
